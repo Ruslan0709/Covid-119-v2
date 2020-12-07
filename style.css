@@ -1,0 +1,55 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	font-size: 18px;
+	background-color: #000;
+	color: rgb(255, 0, 0);
+}
+
+.wrapper {
+	text-align: center;
+	padding: 80px;
+}
+
+h1 {
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+}
+
+p {
+	line-height: 27px;
+}
+
+input {
+	padding: 5px;
+	font-size: 25px;
+	color: rgb(255, 0, 0);
+	border: 0;
+}
+
+button {
+	font-size: 25px;
+	padding: 5px 10px;
+	border: 0;
+	background-color: rgb(255, 0, 0);
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s;
+	border-left: 1px solid #fff;
+}
+
+button:hover {
+	background-color: #fff;
+	color: rgb(255, 0, 0);
+	border-left: 1px solid rgb(255, 0, 0);
+}
+
+.unblock {
+	margin: 15px 0 10px 0;
+}

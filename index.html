@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>Вирус COVID-119</title>
+</head>
+<body>
+
+<div class="wrapper">
+	<h1>Ваш компьютер был заражён вирусом Covid-119!</h1>
+	<p style="margin: 0 0 15px 0;">На данный момент, все данные на этом компьютере зашифрованы. При попытке удалить этот вирус, воспользоваться диспетчером задач, безопасным режимом, командной строкой и так далее все данные с этого компьютера будут безвозвратно уничтожены.</p>
+	<label for="text">Вместо этого вы можете ввести код "I love Covid" в это поле:</label>
+	<div class="unblock"><input type="text" id="text" placeholder="Введите код"><button id="button">Разблокировать</button></div>
+	<p>Чтобы разблокироваться ваш компьютер</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!-- jQuery -->
+<script>
+
+function unblock(){
+
+	let val = $('input#text').val();
+
+	if ( val.toLowerCase() == 'i-love-covid' || val.toLowerCase() == 'i love covid' || val.toLowerCase() == 'love covid' )
+	{
+		window.close();
+
+	} else
+	{
+		alert('Неверный код!!!');
+	}
+}
+
+$(document).ready(function(){
+
+	$('button#button').on('click', () => unblock());
+});
+</script>
+</body>
+</html>
